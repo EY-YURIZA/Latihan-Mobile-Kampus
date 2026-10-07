@@ -20,3 +20,15 @@ class SelamatDatang extends StatelessWidget {
     );
   }
 }
+
+class DataPasien {
+  // pake static karena antrian ini lokasinya sama di satu puskesmas
+  static String lokasiFaskes = "Puskesmas Melati";
+  // ga static soalnya nama yang berobat pasti beda-beda
+  String namaPasien;
+  // buat nyimpen nama pas pendaftaran
+  DataPasien(this.namaPasien);
+  void statusAntrian() {
+    print("Atas nama kak $namaPasien, jadwal pemeriksaannya di $lokasiFaskes.");
+  }
+}
