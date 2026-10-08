@@ -38,8 +38,7 @@ void main() {
   print("Jadwal Info Antrian Pagi ");
   antrian1.statusAntrian();
   antrian2.statusAntrian();
-  // nah ini pembuktiannya, ceritanya puskesmas pindah lokasi sementara.
+  //ceritanya puskesmas pindah lokasi sementara.
   // karena variabelnya pake static, kita cukup ubah sekali aja di sini, 
   // nanti antrian si Nazwa dan Dinda otomatis ikut pindah semua.
   DataPasien.lokasiFaskes = "Puskesmas Mawar";
-  
