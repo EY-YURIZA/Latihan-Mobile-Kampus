@@ -3,12 +3,9 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const SelamatDatang());
 }
-
 class SelamatDatang extends StatelessWidget {
   const SelamatDatang({super.key});
-  
   static const masih_pemula = 'Halo, Selamat Datang SEPUHH!';  
-
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -32,3 +29,17 @@ class DataPasien {
   }
 }
 
+void main() {
+  // ini ceritanya kita masukin data si Nazwa jadi pasien pertama
+  DataPasien antrian1 = DataPasien("Nazwa");
+  // nah kalo ini ngedata si Dinda jadi pasien kedua
+  DataPasien antrian2 = DataPasien("Dinda");
+
+  print("Jadwal Info Antrian Pagi ");
+  antrian1.statusAntrian();
+  antrian2.statusAntrian();
+  // nah ini pembuktiannya, ceritanya puskesmas pindah lokasi sementara.
+  // karena variabelnya pake static, kita cukup ubah sekali aja di sini, 
+  // nanti antrian si Nazwa dan Dinda otomatis ikut pindah semua.
+  DataPasien.lokasiFaskes = "Puskesmas Mawar";
+  
