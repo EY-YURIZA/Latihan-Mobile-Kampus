@@ -16,7 +16,6 @@ class SelamatDatang extends StatelessWidget {
     );
   }
 }
-
 class DataPasien {
   // pake static soalnya puskesmasnya kan cuma satu gedung, 
   // jadi semua pasien yang antri otomatis lokasinya sama di sini terus
@@ -29,7 +28,6 @@ class DataPasien {
     print("Atas nama kak $namaPasien, jadwal pemeriksaannya di $lokasiFaskes.");
   }
 }
-
 void main() {
   // ini ceritanya kita masukin data si Nazwa jadi pasien pertama
   DataPasien antrian1 = DataPasien("Nazwa");
@@ -50,3 +48,33 @@ void main() {
   runApp(const SelamatDatang());
 }
 
+//jajal buat custom widget
+class CustomTextWidget extends StatelessWidget {
+  const CustomTextWidget({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const Text(
+      // narik tulisan dari variabel masihPemula yang ada di class SelamatDatang tadi
+      SelamatDatang.masihPemula,
+      style: TextStyle(
+        fontSize: 24,
+        color: Colors.blue,
+      ),
+    );
+  }
+}
+//jajal buat custom widget
+class CustomTextWidget extends StatelessWidget {
+  const CustomTextWidget({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const Text(
+      // narik tulisan dari variabel masihPemula yang ada di class SelamatDatang tadi
+      SelamatDatang.masihPemula,
+      style: TextStyle(
+        fontSize: 24,
+        color: Colors.blue,
+      ),
+    );
+  }
+}
