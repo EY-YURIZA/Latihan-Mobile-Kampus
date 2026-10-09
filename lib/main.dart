@@ -63,18 +63,3 @@ class CustomTextWidget extends StatelessWidget {
     );
   }
 }
-//jajal buat custom widget
-class CustomTextWidget extends StatelessWidget {
-  const CustomTextWidget({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return const Text(
-      // narik tulisan dari variabel masihPemula yang ada di class SelamatDatang tadi
-      SelamatDatang.masihPemula,
-      style: TextStyle(
-        fontSize: 24,
-        color: Colors.blue,
-      ),
-    );
-  }
-}
